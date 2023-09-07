@@ -3,11 +3,17 @@
 .margin-auto,
 .row,
 .section-5-children,
-.section-5-children-2,
-nav {
+.section-5-children-2, nav {
   display: flex
 }
-
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu{
+  gap: 1rem;
+}
 .about-img,
 .main-bg {
   background-size: cover
@@ -89,8 +95,8 @@ html {
   padding: 100px 0
 }
 
-.py-150 {
-  padding: 150px 0
+.py-120 {
+  padding: 120px 0
 }
 
 .px-50 {
@@ -145,12 +151,6 @@ nav {
 .logo {
   letter-spacing: 3px
 }
-
-.nav {
-  justify-content: space-around;
-  width: 30%
-}
-
 .fa-bars,
 .fa-times {
   background-repeat: no-repeat;
@@ -184,10 +184,6 @@ nav {
 
 .fa-times {
   background-image: url("data:image/svg+xml,%3Csvg%20fill%3D%22%23FFF%22%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M12%2011.293l10.293-10.293.707.707-10.293%2010.293%2010.293%2010.293-.707.707-10.293-10.293-10.293%2010.293-.707-.707%2010.293-10.293-10.293-10.293.707-.707%2010.293%2010.293z%22%2F%3E%3C%2Fsvg%3E")
-}
-
-.main-bg {
-  background-image: url('./assets/img/bg1.webp')
 }
 
 .about {
@@ -519,7 +515,7 @@ nav {
     padding: 0 60px 60px 5%
   }
 
-  .py-150 {
+  .py-70_mb {
     padding: 70px 0
   }
 
@@ -604,7 +600,6 @@ nav {
   .burger {
     display: block
   }
-
   .nav {
     margin: 0;
     background: url('') #000;
@@ -618,15 +613,16 @@ nav {
     padding: 0;
     transition: .4s
   }
-
   #nav {
-    display: none
+    display: none;
+    position:absolute;
+    flex-direction: column;
+    padding: 15px;
+    background: #232323;
   }
-
   .navlink {
     text-align: center
   }
-
   .nav-active {
     right: 0
   }

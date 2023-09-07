@@ -1,5 +1,5 @@
 const burger = document.querySelector('.burger i');
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('.nav-menu');
 function toggleNav() {
   burger.classList.toggle('fa-bars');
   burger.classList.toggle('fa-times');
