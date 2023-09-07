@@ -1,0 +1,1 @@
+# This project has 100% performance on lighthouse
